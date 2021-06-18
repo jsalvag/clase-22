@@ -75,15 +75,18 @@ def count_substring(string, sub_string):
     return string.count(sub_string)
 
 
-str = "este es un string que tiene varias coincidencias de strings con el sub-str"
-sub_str = "string"
-
-print("La palabra [", sub_str, "] aparece ", count_substring(str, sub_str), " veces")
 
 if __name__ == "__main__":
     main()
     string = "Hola Codo a Codo"  # input().strip()
     sub_string = "codo"  # input().strip()
-
     count = count_substring(string, sub_string)
     print(count)
+
+    str = "este es un string que tiene varias coincidencias de strings con el sub-str"
+    sub_str = "string"
+
+    print("La palabra [", sub_str, "] aparece ", count_substring(str, sub_str), " veces")
+
+ 
+    
