@@ -55,10 +55,18 @@ def count_substring(string, sub_string):
     return string.count(sub_string)
 
 
-str = "este es un string que tiene varias coincidencias de strings con el sub-str"
-sub_str = "string"
+def count_substring_ignore_case(string, sub_string):
+    """
+    Cuenta cuantas veces aparece el sub_string sin importar si tiene mayúscula y/o minúsculas
+    en el string
+    Args:
+        string: (string)
+        sub_string: (string)
+    rerturn : int
+    """
 
-print("La palabra [", sub_str, "] aparece ", count_substring(str, sub_str), " veces")
+    return string.lower().count(sub_string.lower())
+
 
 if __name__ == "__main__":
     main()
@@ -67,3 +75,9 @@ if __name__ == "__main__":
 
     count = count_substring(string, sub_string)
     print(count)
+
+    string2 = "este es un string que tiene varias coincidencias de strings con el sub-String"
+    sub_str = "string"
+    print("\nLa palabra [", sub_str, "] aparece ", count_substring(string2, sub_str), " veces")
+    print("La palabra [", sub_str, "] aparece ", count_substring_ignore_case(string2, sub_str),
+          " veces independientemente de su case\n")
