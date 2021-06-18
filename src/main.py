@@ -51,8 +51,8 @@ def count_substring(string, sub_string):
 
 if __name__ == "__main__":
     main()
-    string = input().strip()
-    sub_string = input().strip()
+    string = "Hola Codo a Codo" #input().strip() 
+    sub_string = "codo" #input().strip()
     
     count = count_substring(string, sub_string)
     print(count)
