@@ -1,3 +1,22 @@
+import math
+# Escribir una funcion que basado en el radio:
+#  calcule la sup de un circulo
+#  calcule la circunferencia
+#  calcule la sup de una esfera
+#  calcule el vol de una esfera
+
+def calcularCircunferencia(radio):
+    """
+    calcularCircunferencia() -> float
+
+    radio -- radio is in float
+    """
+
+    circunferencia = math.pi * 2 * radio
+
+    return circunferencia
+
+
 
 def main():
     """
@@ -5,6 +24,14 @@ def main():
     """
     myVariable = complex()
     print(myVariable)
+
+    radioVariable = input("Ingrese el valor del radio: ")
+    # terminar el chequeo y si no es float hacer algo...
+
+    circunferencia = calcularCircunferencia(float(radioVariable))
+
+    print(f"El valor de la circunferencia es: {circunferencia}" )
+
     return None
 
 # Esto sera una constante
