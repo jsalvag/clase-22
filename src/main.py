@@ -37,7 +37,22 @@ def complex(real=0.0, imag=0.0):
     if imag == 0.0 and real == 0.0:
         return complex_zero
 
+def count_substring(string, sub_string):
+    """
+    Cuenta cuantas veces aparece el sub_string
+    en el string
+    Args:
+        string: (string)
+        sub_string: (string)
+    rerturn : int
+    """
 
+    return 0
 
 if __name__ == "__main__":
     main()
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
